@@ -1,0 +1,17 @@
+﻿model = "gpt-5.3-codex-spark"
+model_reasoning_effort = "xhigh"
+
+[mcp_servers.github]
+url = "https://api.githubcopilot.com/mcp/"
+bearer_token_env_var = "GITHUB_TOKEN"
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["@playwright/mcp@latest"]
+
+# Optional local MCP server (set a local path for each machine when needed)
+# [mcp_servers.comfyui-sd]
+# command = "python"
+# args = ["C:\\Users\\<user>\\Desktop\\<repo>\\comfyui_mcp_server.py"]
+# [mcp_servers.comfyui-sd.env]
+# COMFYUI_BASE_URL = "http://127.0.0.1:8188"

@@ -1,4 +1,4 @@
-# AI Agent Settings
+﻿# AI Agent Settings
 
 AI 에이전트별 글로벌 설정을 관리하는 저장소.
 새 PC에서 에이전트를 세팅할 때, 이 repo URL만 전달하면 자동으로 글로벌 설정을 적용합니다.
@@ -13,7 +13,11 @@ ai-agent-setting/
 │   ├── mcp-servers.json  ← MCP 서버 설정 (→ ~/.claude.json mcpServers)
 │   ├── skills/           ← 스킬 (→ ~/.claude/skills/)
 │   └── SETUP.md          ← 새 PC 세팅 매뉴얼
-├── codex/                ← Codex 설정 (TBD)
+├── codex/                ← Codex 설정
+│   ├── GLOBAL_CODEX.md    ← 글로벌 지시사항 (→ ~/.codex/GLOBAL_CODEX.md)
+│   ├── config.toml        ← Codex 설정 파일 (→ ~/.codex/config.toml)
+│   ├── skills/            ← 스킬 (→ ~/.codex/skills/)
+│   └── SETUP.md           ← 새 PC 세팅 매뉴얼
 └── antigravity/          ← Antigravity 설정 (TBD)
 ```
 
@@ -28,3 +32,4 @@ https://github.com/payolajoker/ai-agent-setting.git
 
 ### Sync
 로컬에서 글로벌 설정이 변경되면, 에이전트가 자동으로 이 repo에 push합니다.
+

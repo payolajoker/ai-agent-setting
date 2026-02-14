@@ -40,5 +40,25 @@ The script will automatically:
 - Copy `antigravity/GLOBAL_GEMINI.md` to `~/.gemini/GEMINI.md`
 - Copy all skills to `~/.gemini/skills/`
 
-## Sync
-To sync changes back to the repo, copy the files from `~/.gemini` back to `antigravity/` folder in this repo and push.
+## Sync (Local → Repo)
+
+When you make changes to your local global settings (e.g., adding a new skill or editing `GEMINI.md`), run the sync script to push changes back to this repository.
+
+**Windows (PowerShell):**
+```powershell
+cd <repo-root>
+pwsh ./antigravity/scripts/sync.ps1
+```
+
+**Linux / macOS (Bash):**
+```bash
+cd <repo-root>
+chmod +x ./antigravity/scripts/sync.sh
+./antigravity/scripts/sync.sh
+```
+
+The script will:
+1. Pull latest changes from git
+2. Copy `~/.gemini/GEMINI.md` → `antigravity/GLOBAL_GEMINI.md`
+3. Copy `~/.gemini/skills/*` → `antigravity/skills/*`
+4. Commit and push if there are changes

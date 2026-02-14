@@ -13,23 +13,32 @@ User provides this repo URL (`https://github.com/payolajoker/ai-agent-setting.gi
 git clone https://github.com/payolajoker/ai-agent-setting.git <temp-dir>
 ```
 
-### 2. Create Global Configuration Directory
+## Setup Steps
+
+### 1. Clone the repo (if not already cloned)
 ```bash
-mkdir -p ~/.gemini/skills
+git clone https://github.com/payolajoker/ai-agent-setting.git <temp-dir>
 ```
 
-### 3. Copy GLOBAL_GEMINI.md
-```bash
-cp <repo>/antigravity/GLOBAL_GEMINI.md ~/.gemini/GEMINI.md
+### 2. Run Setup Script
+
+**Windows (PowerShell):**
+```powershell
+cd <temp-dir>
+pwsh ./antigravity/scripts/setup.ps1
 ```
 
-### 4. Copy skills/
+**Linux / macOS (Bash):**
 ```bash
-cp -r <repo>/antigravity/skills/* ~/.gemini/skills/
+cd <temp-dir>
+chmod +x ./antigravity/scripts/setup.sh
+./antigravity/scripts/setup.sh
 ```
 
-### 5. Verification
-Check if `~/.gemini/GEMINI.md` exists and contains the skill paths pointing to `~/.gemini/skills`.
+The script will automatically:
+- Create `~/.gemini/skills` directory
+- Copy `antigravity/GLOBAL_GEMINI.md` to `~/.gemini/GEMINI.md`
+- Copy all skills to `~/.gemini/skills/`
 
 ## Sync
 To sync changes back to the repo, copy the files from `~/.gemini` back to `antigravity/` folder in this repo and push.

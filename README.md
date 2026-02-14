@@ -18,7 +18,11 @@ ai-agent-setting/
 │   ├── config.toml        ← Codex 설정 파일 (→ ~/.codex/config.toml)
 │   ├── skills/            ← 스킬 (→ ~/.codex/skills/)
 │   └── SETUP.md           ← 새 PC 세팅 매뉴얼
-└── antigravity/          ← Antigravity 설정 (TBD)
+└── antigravity/          ← Antigravity (Gemini) 설정
+    ├── GLOBAL_GEMINI.md   ← 글로벌 지시사항 (→ ~/.gemini/GEMINI.md)
+    ├── skills/            ← 스킬 (→ ~/.gemini/skills/)
+    ├── scripts/           ← 자동 세팅 스크립트
+    └── SETUP.md           ← 새 PC 세팅 매뉴얼
 ```
 
 ## Usage
@@ -28,6 +32,12 @@ ai-agent-setting/
 
 ```
 https://github.com/payolajoker/ai-agent-setting.git
+```
+
+#### Antigravity (Gemini)
+```powershell
+# Windows
+pwsh ./antigravity/scripts/setup.ps1
 ```
 
 ### Sync

@@ -30,6 +30,24 @@ cp -r <repo>/codex/skills/* ~/.codex/skills/
 
 ### 5. Restart Codex
 Tell the user to restart Codex so config/MCP settings take effect.
+## 2. Sync local changes back to this repo (important)
+
+When global Codex settings are changed locally, use this script:
+
+```powershell
+cd <repo-root>
+pwsh ./codex/scripts/sync-codex.ps1
+```
+
+The script will:
+
+1. Pull latest from `main` (or current branch)
+2. Copy from:
+   - `~/.codex/GLOBAL_CODEX.md` → `codex/GLOBAL_CODEX.md`
+   - `~/.codex/config.toml` → `codex/config.toml`
+   - `~/.codex/skills/*` → `codex/skills/*`
+3. Commit only when files actually changed
+4. Push back to `origin`
 
 ## Important Notes
 - This repo stores Codex global configuration only.

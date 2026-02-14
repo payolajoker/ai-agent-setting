@@ -31,5 +31,10 @@ https://github.com/payolajoker/ai-agent-setting.git
 ```
 
 ### Sync
-로컬에서 글로벌 설정이 변경되면, 에이전트가 자동으로 이 repo에 push합니다.
+- 로컬에서 글로벌 설정이 변경되면, 에이전트가 자동으로 이 repo에 push합니다.
+- Codex는 `ai-agent-setting/codex/scripts/sync-codex.ps1`로 동기화할 수 있습니다:
+  ```powershell
+  cd ai-agent-setting
+  pwsh ./codex/scripts/sync-codex.ps1
+  ```
 

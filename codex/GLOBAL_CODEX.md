@@ -11,6 +11,9 @@ When ANY of the following global settings are added or changed locally, you MUST
 
 - `~/.codex/config.toml` → sync to `codex/config.toml`
 - `~/.codex/skills/` (new skill added) → sync to `codex/skills/`
+- MCP server configuration can come from:
+  - `~/.codex/config.toml` (`[mcp_servers]` section), or
+  - `~/.claude/mcp-servers.json` / `~/.claude.json` (`mcpServers`)
 
 ### How to sync
 

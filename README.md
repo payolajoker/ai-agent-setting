@@ -32,9 +32,10 @@ https://github.com/payolajoker/ai-agent-setting.git
 
 ### Sync
 - 로컬에서 글로벌 설정이 변경되면, 에이전트가 자동으로 이 repo에 push합니다.
+- Codex MCP는 `~/.codex/config.toml` 기준으로 동기화되며, `~/.claude.json`(mcpServers) 또는 `~/.claude/mcp-servers.json`에 있던 MCP도 포함해 반영합니다.
 - Codex는 `ai-agent-setting/codex/scripts/sync-codex.ps1`로 동기화할 수 있습니다:
   ```powershell
   cd ai-agent-setting
   pwsh ./codex/scripts/sync-codex.ps1
-  ```
+  ``` 
 

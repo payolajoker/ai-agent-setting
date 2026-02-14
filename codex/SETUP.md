@@ -45,6 +45,7 @@ The script will:
 2. Copy from:
    - `~/.codex/GLOBAL_CODEX.md` → `codex/GLOBAL_CODEX.md`
    - `~/.codex/config.toml` → `codex/config.toml`
+   - `~/.claude/mcp-servers.json` or `~/.claude.json#mcpServers` (if present) → `codex/config.toml` MCP section
    - `~/.codex/skills/*` → `codex/skills/*`
 3. Commit only when files actually changed
 4. Push back to `origin`

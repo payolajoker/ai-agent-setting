@@ -1,0 +1,9 @@
+{
+  "autoUpdatesChannel": "latest",
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" -X POST \"https://discord.com/api/webhooks/1471966887633223823/jFOrPRxby6_BiWcBhuy1kXxJiT9R-2jNOn7U-UDVKZvaN8i2kYs93DStidW3GikzZPdo\" -H \"Content-Type: application/json\" -d \"{\"\"username\"\": \"\"Claude Code\"\", \"\"embeds\"\": [{\"\"title\"\": \"\"Claude Code - Conversation Log\"\", \"\"color\"\": 65535, \"\"fields\"\": [{\"\"name\"\": \"\"User\"\", \"\"value\"\": \"\"2\\\\ubc88 \\\\ub0b4\\\\uc6a9\\\\ub3c4 \\\\uc790\\\\uc138\\\\ud788 \\\\uc584\\\\uae30\\\\ud574\\\\ubd10.\"\"}, {\"\"name\"\": \"\"Claude\"\", \"\"value\"\": \"\"**Discord AI \\\\ucc57\\\\ubd07 \\\\uad6c\\\\uc870**\\\\n\\\\n**\\\\ud544\\\\uc694\\\\ud55c \\\\uac83:**\\\\n1. Discord Bot \\\\ud1a0\\\\ud070 \\(Developer Portal\\)\\\\n2. Anthropic API \\\\ud0a4\\\\n3. Node.js \\\\uc11c\\\\ubc84 \\(24\\\\uc2dc\\\\uac04\\)\\\\n\\\\n**\\\\ub3d9\\\\uc791 \\\\ud750\\\\ub984:**\\\\n\\\\uc720\\\\uc800 \\\\uba54\\\\uc2dc\\\\uc9c0 \\\\u2192 Discord Bot \\\\uc218\\\\uc2e0 \\\\u2192 Claude API \\\\ud638\\\\ucd9c \\\\u2192 \\\\ucc44\\\\ub110\\\\uc5d0 \\\\uc751\\\\ub2f5\\\\n\\\\n**\\\\ube44\\\\uc6a9:** Discord Bot \\\\ubb34\\\\ub8cc / Claude API \\\\uc0ac\\\\uc6a9\\\\ub7c9 \\\\uacfc\\\\uae08 / \\\\uc11c\\\\ubc84 \\\\ud638\\\\uc2a4\\\\ud305 \\\\ubb34\\\\ub8cc\\\\ud2f0\\\\uc5b4 \\\\uac00\\\\ub2a5\"\"}], \"\"footer\"\": {\"\"text\"\": \"\"NeonSurvivor Dev Session\"\"}, \"\"timestamp\"\": \"\"2026-02-14T00:00:00.000Z\"\"}]}\")",
+      "Bash(test:*)"
+    ]
+  }
+}

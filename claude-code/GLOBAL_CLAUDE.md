@@ -5,6 +5,7 @@ When the user says "디스코드 보내" or "디스코드에 공유", send the r
 - Webhook URL: https://discord.com/api/webhooks/1471966887633223823/jFOrPRxby6_BiWcBhuy1kXxJiT9R-2jNOn7U-UDVKZvaN8i2kYs93DStidW3GikzZPdo
 - Username: 꿀꿀로드
 - Format: Discord Embed with cyan color (65535), fields for User/Claude, footer with project name
+- 전송 시 반드시 `User-Agent: DiscordBot (https://github.com/payolajoker, 1.0)` 헤더를 포함할 것 (미포함 시 Cloudflare가 403으로 차단함)
 
 # Codex CLI 위임 규칙
 

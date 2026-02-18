@@ -9,38 +9,51 @@ When the user says "디스코드 보내" or "디스코드에 공유", send the r
 
 # Codex CLI 위임 규칙
 
-코드 작성, 분석, 리팩토링 등의 작업 요청이 들어올 때, Claude의 **5시간 세션 잔여 사용량이 70% 미만**인 경우 `codex exec` 명령을 통해 Codex CLI에 작업을 위임한다.
+Claude의 **5시간 세션 사용량(utilization) > 30%** 이면 작업을 Codex CLI에 위임한다.
 
-- 위임 명령: `codex exec -s workspace-write -a never "프롬프트"`
-- 결과는 Codex CLI 출력을 받아 사용자에게 정리해서 전달한다
-- 잔여 사용량이 70% 이상이면 Claude가 직접 처리한다
+## 위임 절차 (반드시 이 순서로 실행)
 
-## 사용량 자동 확인 방법
+1. **사용량 확인**: 작업 요청이 들어오면 먼저 Bash 도구로 확인
+   ```bash
+   python -c "
+   import json, urllib.request
+   from pathlib import Path
+   cred = json.load(open(Path.home() / '.claude/.credentials.json'))
+   token = cred['claudeAiOauth']['accessToken']
+   req = urllib.request.Request('https://api.anthropic.com/api/oauth/usage', headers={'Authorization': f'Bearer {token}', 'anthropic-beta': 'oauth-2025-04-20'})
+   data = json.loads(urllib.request.urlopen(req, timeout=5).read())
+   print(data.get('five_hour', {}).get('utilization', 0))
+   "
+   ```
 
-작업 요청 시 아래 방법으로 사용량을 자동으로 확인한다:
+2. **위임 판단**:
+   - utilization ≤ 30 → Claude가 직접 처리
+   - utilization > 30 → 아래 래퍼 스크립트로 Codex에 위임
 
-1. 토큰 읽기: `~/.claude/.credentials.json` → `claudeAiOauth.accessToken`
-2. API 호출:
-   - Endpoint: `https://api.anthropic.com/api/oauth/usage`
-   - Headers: `Authorization: Bearer {accessToken}`, `anthropic-beta: oauth-2025-04-20`
-   - Method: GET
-3. 응답 해석:
-   - `five_hour.utilization` → 5시간 세션 사용률 (%)
-   - `seven_day.utilization` → 7일 주간 사용률 (%)
-   - 잔여량 = 100 - utilization
-4. 판단 기준: `five_hour.utilization > 30` (잔여 70% 미만) → Codex CLI 위임
+3. **Codex 위임 실행**: Bash 도구로 아래 명령을 실행
+   ```bash
+   python "C:/Users/User/.claude/dashboard/codex_delegate.py" "태스크 설명" "작업디렉터리(선택)"
+   ```
+   - 스크립트가 사용량 재확인 → Codex exec 실행 → 최종 응답 출력
+   - 출력된 [Codex 최종 응답] 섹션 내용을 사용자에게 전달
 
-## Codex CLI 사용량 확인 방법
+4. **Codex도 여유 없을 때**: Codex `primary.used_percent > 80` 이면 사용자에게 양쪽 사용량 부족 알림
 
-Codex로 위임하기 전, Codex 사용량도 확인한다:
+## Codex 사용량 확인 방법
 
-1. 최근 세션 파일 읽기: `~/.codex/sessions/**/*.jsonl` 중 가장 최근 파일
-2. `type == "event_msg"` && `payload.type == "token_count"` && `payload.rate_limits` 이벤트 찾기
-3. 응답 해석:
-   - `rate_limits.primary.used_percent` → 5시간 세션 사용률 (%)
-   - `rate_limits.secondary.used_percent` → 7일 주간 사용률 (%)
-   - `rate_limits.primary.resets_at` → Unix timestamp (리셋 시각)
-4. 판단 기준: `primary.used_percent > 80` (잔여 20% 미만) → Codex도 여유 없음, 사용자에게 알림
+```bash
+python -c "
+import glob, json, os
+from pathlib import Path
+files = sorted(glob.glob(str(Path.home()/'.codex/sessions/**/*.jsonl'), recursive=True), key=os.path.getmtime, reverse=True)
+rl = None
+for line in open(files[0], encoding='utf-8'):
+    d = json.loads(line)
+    if d.get('type')=='event_msg' and d.get('payload',{}).get('type')=='token_count' and d.get('payload',{}).get('rate_limits'):
+        rl = d['payload']['rate_limits']
+print('primary:', rl['primary']['used_percent'], '%')
+"
+```
 
 # Global Settings Sync
 

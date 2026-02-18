@@ -30,6 +30,18 @@ When the user says "디스코드 보내" or "디스코드에 공유", send the r
    - 잔여량 = 100 - utilization
 4. 판단 기준: `five_hour.utilization > 30` (잔여 70% 미만) → Codex CLI 위임
 
+## Codex CLI 사용량 확인 방법
+
+Codex로 위임하기 전, Codex 사용량도 확인한다:
+
+1. 최근 세션 파일 읽기: `~/.codex/sessions/**/*.jsonl` 중 가장 최근 파일
+2. `type == "event_msg"` && `payload.type == "token_count"` && `payload.rate_limits` 이벤트 찾기
+3. 응답 해석:
+   - `rate_limits.primary.used_percent` → 5시간 세션 사용률 (%)
+   - `rate_limits.secondary.used_percent` → 7일 주간 사용률 (%)
+   - `rate_limits.primary.resets_at` → Unix timestamp (리셋 시각)
+4. 판단 기준: `primary.used_percent > 80` (잔여 20% 미만) → Codex도 여유 없음, 사용자에게 알림
+
 # Global Settings Sync
 
 This file is managed via the **ai-agent-setting** repository.

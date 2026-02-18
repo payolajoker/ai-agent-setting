@@ -9,12 +9,26 @@ When the user says "디스코드 보내" or "디스코드에 공유", send the r
 
 # Codex CLI 위임 규칙
 
-코드 작성, 분석, 리팩토링 등의 작업 요청이 들어올 때, Claude의 **5일 잔여 사용량이 70% 미만**인 경우 `codex exec` 명령을 통해 Codex CLI에 작업을 위임한다.
+코드 작성, 분석, 리팩토링 등의 작업 요청이 들어올 때, Claude의 **5시간 세션 잔여 사용량이 70% 미만**인 경우 `codex exec` 명령을 통해 Codex CLI에 작업을 위임한다.
 
 - 위임 명령: `codex exec -s workspace-write -a never "프롬프트"`
 - 결과는 Codex CLI 출력을 받아 사용자에게 정리해서 전달한다
 - 잔여 사용량이 70% 이상이면 Claude가 직접 처리한다
-- 사용량 확인이 불가능한 경우, 사용자에게 현재 사용량을 물어본 후 결정한다
+
+## 사용량 자동 확인 방법
+
+작업 요청 시 아래 방법으로 사용량을 자동으로 확인한다:
+
+1. 토큰 읽기: `~/.claude/.credentials.json` → `claudeAiOauth.accessToken`
+2. API 호출:
+   - Endpoint: `https://api.anthropic.com/api/oauth/usage`
+   - Headers: `Authorization: Bearer {accessToken}`, `anthropic-beta: oauth-2025-04-20`
+   - Method: GET
+3. 응답 해석:
+   - `five_hour.utilization` → 5시간 세션 사용률 (%)
+   - `seven_day.utilization` → 7일 주간 사용률 (%)
+   - 잔여량 = 100 - utilization
+4. 판단 기준: `five_hour.utilization > 30` (잔여 70% 미만) → Codex CLI 위임
 
 # Global Settings Sync
 

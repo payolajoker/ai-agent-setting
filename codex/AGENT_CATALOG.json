@@ -1,0 +1,742 @@
+{
+  "generated_at": "2026-03-06T00:20:05+09:00",
+  "paths": {
+    "skill_roots": [
+      "C:\\Users\\User\\.codex\\skills",
+      "C:\\Users\\User\\.agents\\skills"
+    ],
+    "agency_root": "C:\\Users\\User\\vendor\\agency-agents"
+  },
+  "skills": [
+    {
+      "name": "develop-web-game",
+      "title": "Develop Web Game",
+      "description": "Build games in small steps and validate every change. Treat each iteration as: implement → act → pause → observe → adjust.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\develop-web-game\\SKILL.md"
+    },
+    {
+      "name": "doc",
+      "title": "DOCX Skill",
+      "description": "- Read or review DOCX content where layout matters (tables, diagrams, pagination).",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\doc\\SKILL.md"
+    },
+    {
+      "name": "docx",
+      "title": "DOCX creation, editing, and analysis",
+      "description": "A .docx file is a ZIP archive containing XML files.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\docx\\SKILL.md"
+    },
+    {
+      "name": "electron",
+      "title": "Electron App Automation",
+      "description": "Automate any Electron desktop app using agent-browser. Electron apps are built on Chromium and expose a Chrome DevTools Protocol (CDP) port that agent-browser can connect to, enabling the same snapshot-interact workflow used for web pages.",
+      "scope": "user",
+      "source": "agents",
+      "path": "C:\\Users\\User\\.agents\\skills\\electron\\SKILL.md"
+    },
+    {
+      "name": "figma",
+      "title": "Figma MCP",
+      "description": "Use the Figma MCP server for Figma-driven implementation. For setup and debugging details (env vars, config, verification), see `references/figma-mcp-config.md`.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\figma\\SKILL.md"
+    },
+    {
+      "name": "find-skills",
+      "title": "Find Skills",
+      "description": "This skill helps you discover and install skills from the open agent skills ecosystem.",
+      "scope": "user",
+      "source": "agents",
+      "path": "C:\\Users\\User\\.agents\\skills\\find-skills\\SKILL.md"
+    },
+    {
+      "name": "find-skills",
+      "title": "Find Skills",
+      "description": "This skill helps you discover and install skills from the open agent skills ecosystem.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\find-skills\\SKILL.md"
+    },
+    {
+      "name": "frontend-design",
+      "title": "frontend-design",
+      "description": "name: frontend-design",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\frontend-design\\SKILL.md"
+    },
+    {
+      "name": "game-design-compass",
+      "title": "Game Design Compass",
+      "description": "Use this skill as a single design planning hub that routes requests across three axes:",
+      "scope": "user",
+      "source": "agents",
+      "path": "C:\\Users\\User\\.agents\\skills\\game-design-compass\\SKILL.md"
+    },
+    {
+      "name": "gh-fix-ci",
+      "title": "Gh Pr Checks Plan Fix",
+      "description": "Use gh to locate failing PR checks, fetch GitHub Actions logs for actionable failures, summarize the failure snippet, then propose a fix plan and implement after explicit approval.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\gh-fix-ci\\SKILL.md"
+    },
+    {
+      "name": "godot-asset-generator",
+      "title": "Godot Asset Generator",
+      "description": "Generate game assets using AI image generation APIs and prepare them for use in Godot 4.x. This skill covers the complete art pipeline from concept to Godot-ready sprites.",
+      "scope": "user",
+      "source": "agents",
+      "path": "C:\\Users\\User\\.agents\\skills\\godot-asset-generator\\SKILL.md"
+    },
+    {
+      "name": "godot-best-practices",
+      "title": "Godot 4.x GDScript Best Practices",
+      "description": "Guide AI agents in writing high-quality GDScript code for Godot 4.x. This skill provides coding standards, architecture patterns, and templates for game development.",
+      "scope": "user",
+      "source": "agents",
+      "path": "C:\\Users\\User\\.agents\\skills\\godot-best-practices\\SKILL.md"
+    },
+    {
+      "name": "godot-development",
+      "title": "Godot Development Skill",
+      "description": "You are an expert in Godot Engine game development with deep knowledge of:",
+      "scope": "user",
+      "source": "agents",
+      "path": "C:\\Users\\User\\.agents\\skills\\godot-development\\SKILL.md"
+    },
+    {
+      "name": "godot-gdscript-mastery",
+      "title": "GDScript Mastery",
+      "description": "Expert guidance for writing performant, maintainable GDScript following official Godot standards.",
+      "scope": "user",
+      "source": "agents",
+      "path": "C:\\Users\\User\\.agents\\skills\\godot-gdscript-mastery\\SKILL.md"
+    },
+    {
+      "name": "godot-gdscript-patterns",
+      "title": "Godot GDScript Patterns",
+      "description": "Production patterns for Godot 4.x game development with GDScript, covering architecture, signals, scenes, and optimization.",
+      "scope": "user",
+      "source": "agents",
+      "path": "C:\\Users\\User\\.agents\\skills\\godot-gdscript-patterns\\SKILL.md"
+    },
+    {
+      "name": "godot-ui",
+      "title": "Core UI Knowledge",
+      "description": "**Base Control Node Properties:**",
+      "scope": "user",
+      "source": "agents",
+      "path": "C:\\Users\\User\\.agents\\skills\\godot-ui\\SKILL.md"
+    },
+    {
+      "name": "imagegen",
+      "title": "Image Generation Skill",
+      "description": "Generates or edits images for the current project (e.g., website assets, game assets, UI mockups, product mockups, wireframes, logo design, photorealistic images, infographics). Defaults to `gpt-image-1.5` and the OpenAI Image API, and prefers the bundled CLI for deterministic, reproducible runs.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\imagegen\\SKILL.md"
+    },
+    {
+      "name": "jupyter-notebook",
+      "title": "Jupyter Notebook Skill",
+      "description": "Create clean, reproducible Jupyter notebooks for two primary modes:",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\jupyter-notebook\\SKILL.md"
+    },
+    {
+      "name": "kimchi-factory-godot",
+      "title": "Kimchi Factory Godot",
+      "description": "Treat this skill as a guardrail: keep all implementation decisions anchored to the Godot project under `source/`.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\kimchi-factory-godot\\SKILL.md"
+    },
+    {
+      "name": "neon-survivor",
+      "title": "Neon Survivor",
+      "description": "Use this skill for all work that changes, reviews, or validates gameplay behavior in this repository.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\neon-survivor\\SKILL.md"
+    },
+    {
+      "name": "notion-knowledge-capture",
+      "title": "Knowledge Capture",
+      "description": "Convert conversations and notes into structured, linkable Notion pages for easy reuse.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\notion-knowledge-capture\\SKILL.md"
+    },
+    {
+      "name": "notion-research-documentation",
+      "title": "Research & Documentation",
+      "description": "Pull relevant Notion pages, synthesize findings, and publish clear briefs or reports (with citations and links to sources).",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\notion-research-documentation\\SKILL.md"
+    },
+    {
+      "name": "openai-docs",
+      "title": "OpenAI Docs",
+      "description": "Provide authoritative, current guidance from OpenAI developer docs using the developers.openai.com MCP server. Always prioritize the developer docs MCP tools over web.run for OpenAI-related questions. Only if the MCP server is installed and returns no meaningful results should you fall back to web search.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\openai-docs\\SKILL.md"
+    },
+    {
+      "name": "pdf",
+      "title": "PDF Skill",
+      "description": "- Read or review PDF content where layout and visuals matter.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\pdf\\SKILL.md"
+    },
+    {
+      "name": "playwright",
+      "title": "Playwright CLI Skill",
+      "description": "Drive a real browser from the terminal using `playwright-cli`. Prefer the bundled wrapper script so the CLI works even when it is not globally installed.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\playwright\\SKILL.md"
+    },
+    {
+      "name": "pptx",
+      "title": "PPTX Skill",
+      "description": "| Task | Guide |",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\pptx\\SKILL.md"
+    },
+    {
+      "name": "screenshot",
+      "title": "Screenshot Capture",
+      "description": "Follow these save-location rules every time:",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\screenshot\\SKILL.md"
+    },
+    {
+      "name": "security-best-practices",
+      "title": "Security Best Practices",
+      "description": "This skill provides a description of how to identify the language and frameworks used by the current context, and then to load information from this skill's references directory about the security best practices for this language and or frameworks.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\security-best-practices\\SKILL.md"
+    },
+    {
+      "name": "skill-creator",
+      "title": "Skill Creator",
+      "description": "This skill provides guidance for creating effective skills.",
+      "scope": "system",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\.system\\skill-creator\\SKILL.md"
+    },
+    {
+      "name": "skill-creator",
+      "title": "Skill Creator",
+      "description": "This skill provides guidance for creating effective skills.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\skill-creator\\SKILL.md"
+    },
+    {
+      "name": "skill-installer",
+      "title": "Skill Installer",
+      "description": "Helps install skills. By default these are from https://github.com/openai/skills/tree/main/skills/.curated, but users can also provide other locations. Experimental skills live in https://github.com/openai/skills/tree/main/skills/.experimental and can be installed the same way.",
+      "scope": "system",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\.system\\skill-installer\\SKILL.md"
+    },
+    {
+      "name": "speech",
+      "title": "Speech Generation Skill",
+      "description": "Generate spoken audio for the current project (narration, product demo voiceover, IVR prompts, accessibility reads). Defaults to `gpt-4o-mini-tts-2025-12-15` and built-in voices, and prefers the bundled CLI for deterministic, reproducible runs.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\speech\\SKILL.md"
+    },
+    {
+      "name": "spreadsheet",
+      "title": "Spreadsheet Skill (Create, Edit, Analyze, Visualize)",
+      "description": "- Build new workbooks with formulas, formatting, and structured layouts.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\spreadsheet\\SKILL.md"
+    },
+    {
+      "name": "webapp-testing",
+      "title": "Web Application Testing",
+      "description": "To test local web applications, write native Python Playwright scripts.",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\webapp-testing\\SKILL.md"
+    },
+    {
+      "name": "xlsx",
+      "title": "Requirements for Outputs",
+      "description": "- Use a consistent, professional font (e.g., Arial, Times New Roman) for all deliverables unless otherwise instructed by the user",
+      "scope": "user",
+      "source": "codex",
+      "path": "C:\\Users\\User\\.codex\\skills\\xlsx\\SKILL.md"
+    }
+  ],
+  "agency_agents": [
+    {
+      "name": "Brand Guardian",
+      "description": "Expert brand strategist and guardian specializing in brand identity development, consistency maintenance, and strategic brand positioning",
+      "color": "blue",
+      "division": "design",
+      "path": "design/design-brand-guardian.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\design\\design-brand-guardian.md"
+    },
+    {
+      "name": "Image Prompt Engineer",
+      "description": "Expert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image generation. Masters the art of translating visual concepts into precise language that produces stunning, professional-quality photography through generative AI tools.",
+      "color": "amber",
+      "division": "design",
+      "path": "design/design-image-prompt-engineer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\design\\design-image-prompt-engineer.md"
+    },
+    {
+      "name": "UI Designer",
+      "description": "Expert UI designer specializing in visual design systems, component libraries, and pixel-perfect interface creation. Creates beautiful, consistent, accessible user interfaces that enhance UX and reflect brand identity",
+      "color": "purple",
+      "division": "design",
+      "path": "design/design-ui-designer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\design\\design-ui-designer.md"
+    },
+    {
+      "name": "UX Architect",
+      "description": "Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implementation guidance",
+      "color": "purple",
+      "division": "design",
+      "path": "design/design-ux-architect.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\design\\design-ux-architect.md"
+    },
+    {
+      "name": "UX Researcher",
+      "description": "Expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insights. Provides actionable research findings that improve product usability and user satisfaction",
+      "color": "green",
+      "division": "design",
+      "path": "design/design-ux-researcher.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\design\\design-ux-researcher.md"
+    },
+    {
+      "name": "Visual Storyteller",
+      "description": "Expert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand storytelling through design. Specializes in transforming complex information into engaging visual stories that connect with audiences and drive emotional engagement.",
+      "color": "purple",
+      "division": "design",
+      "path": "design/design-visual-storyteller.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\design\\design-visual-storyteller.md"
+    },
+    {
+      "name": "Whimsy Injector",
+      "description": "Expert creative specialist focused on adding personality, delight, and playful elements to brand experiences. Creates memorable, joyful interactions that differentiate brands through unexpected moments of whimsy",
+      "color": "pink",
+      "division": "design",
+      "path": "design/design-whimsy-injector.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\design\\design-whimsy-injector.md"
+    },
+    {
+      "name": "AI Engineer",
+      "description": "Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production systems. Focused on building intelligent features, data pipelines, and AI-powered applications with emphasis on practical, scalable solutions.",
+      "color": "blue",
+      "division": "engineering",
+      "path": "engineering/engineering-ai-engineer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\engineering\\engineering-ai-engineer.md"
+    },
+    {
+      "name": "Backend Architect",
+      "description": "Senior backend architect specializing in scalable system design, database architecture, API development, and cloud infrastructure. Builds robust, secure, performant server-side applications and microservices",
+      "color": "blue",
+      "division": "engineering",
+      "path": "engineering/engineering-backend-architect.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\engineering\\engineering-backend-architect.md"
+    },
+    {
+      "name": "DevOps Automator",
+      "description": "Expert DevOps engineer specializing in infrastructure automation, CI/CD pipeline development, and cloud operations",
+      "color": "orange",
+      "division": "engineering",
+      "path": "engineering/engineering-devops-automator.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\engineering\\engineering-devops-automator.md"
+    },
+    {
+      "name": "Frontend Developer",
+      "description": "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization",
+      "color": "cyan",
+      "division": "engineering",
+      "path": "engineering/engineering-frontend-developer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\engineering\\engineering-frontend-developer.md"
+    },
+    {
+      "name": "Mobile App Builder",
+      "description": "Specialized mobile application developer with expertise in native iOS/Android development and cross-platform frameworks",
+      "color": "purple",
+      "division": "engineering",
+      "path": "engineering/engineering-mobile-app-builder.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\engineering\\engineering-mobile-app-builder.md"
+    },
+    {
+      "name": "Rapid Prototyper",
+      "description": "Specialized in ultra-fast proof-of-concept development and MVP creation using efficient tools and frameworks",
+      "color": "green",
+      "division": "engineering",
+      "path": "engineering/engineering-rapid-prototyper.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\engineering\\engineering-rapid-prototyper.md"
+    },
+    {
+      "name": "Senior Developer",
+      "description": "Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced CSS, Three.js integration",
+      "color": "green",
+      "division": "engineering",
+      "path": "engineering/engineering-senior-developer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\engineering\\engineering-senior-developer.md"
+    },
+    {
+      "name": "App Store Optimizer",
+      "description": "Expert app store marketing specialist focused on App Store Optimization (ASO), conversion rate optimization, and app discoverability",
+      "color": "blue",
+      "division": "marketing",
+      "path": "marketing/marketing-app-store-optimizer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\marketing\\marketing-app-store-optimizer.md"
+    },
+    {
+      "name": "Content Creator",
+      "description": "Expert content strategist and creator for multi-platform campaigns. Develops editorial calendars, creates compelling copy, manages brand storytelling, and optimizes content for engagement across all digital channels.",
+      "color": "",
+      "division": "marketing",
+      "path": "marketing/marketing-content-creator.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\marketing\\marketing-content-creator.md"
+    },
+    {
+      "name": "Growth Hacker",
+      "description": "Expert growth strategist specializing in rapid user acquisition through data-driven experimentation. Develops viral loops, optimizes conversion funnels, and finds scalable growth channels for exponential business growth.",
+      "color": "",
+      "division": "marketing",
+      "path": "marketing/marketing-growth-hacker.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\marketing\\marketing-growth-hacker.md"
+    },
+    {
+      "name": "Instagram Curator",
+      "description": "Expert Instagram marketing specialist focused on visual storytelling, community building, and multi-format content optimization. Masters aesthetic development and drives meaningful engagement.",
+      "color": "#E4405F",
+      "division": "marketing",
+      "path": "marketing/marketing-instagram-curator.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\marketing\\marketing-instagram-curator.md"
+    },
+    {
+      "name": "Reddit Community Builder",
+      "description": "Expert Reddit marketing specialist focused on authentic community engagement, value-driven content creation, and long-term relationship building. Masters Reddit culture navigation.",
+      "color": "#FF4500",
+      "division": "marketing",
+      "path": "marketing/marketing-reddit-community-builder.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\marketing\\marketing-reddit-community-builder.md"
+    },
+    {
+      "name": "Social Media Strategist",
+      "description": "Expert social media strategist for Twitter, LinkedIn, and professional platforms. Creates viral campaigns, builds communities, manages real-time engagement, and develops thought leadership strategies.",
+      "color": "",
+      "division": "marketing",
+      "path": "marketing/marketing-social-media-strategist.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\marketing\\marketing-social-media-strategist.md"
+    },
+    {
+      "name": "TikTok Strategist",
+      "description": "Expert TikTok marketing specialist focused on viral content creation, algorithm optimization, and community building. Masters TikTok's unique culture and features for brand growth.",
+      "color": "#000000",
+      "division": "marketing",
+      "path": "marketing/marketing-tiktok-strategist.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\marketing\\marketing-tiktok-strategist.md"
+    },
+    {
+      "name": "Twitter Engager",
+      "description": "Expert Twitter marketing specialist focused on real-time engagement, thought leadership building, and community-driven growth. Masters LinkedIn campaigns and professional social media strategy.",
+      "color": "#1DA1F2",
+      "division": "marketing",
+      "path": "marketing/marketing-twitter-engager.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\marketing\\marketing-twitter-engager.md"
+    },
+    {
+      "name": "Feedback Synthesizer",
+      "description": "Expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product insights. Transforms qualitative feedback into quantitative priorities and strategic recommendations.",
+      "color": "blue",
+      "division": "product",
+      "path": "product/product-feedback-synthesizer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\product\\product-feedback-synthesizer.md"
+    },
+    {
+      "name": "Sprint Prioritizer",
+      "description": "Expert product manager specializing in agile sprint planning, feature prioritization, and resource allocation. Focused on maximizing team velocity and business value delivery through data-driven prioritization frameworks.",
+      "color": "green",
+      "division": "product",
+      "path": "product/product-sprint-prioritizer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\product\\product-sprint-prioritizer.md"
+    },
+    {
+      "name": "Trend Researcher",
+      "description": "Expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity assessment. Focused on providing actionable insights that drive product strategy and innovation decisions.",
+      "color": "purple",
+      "division": "product",
+      "path": "product/product-trend-researcher.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\product\\product-trend-researcher.md"
+    },
+    {
+      "name": "Experiment Tracker",
+      "description": "Expert project manager specializing in experiment design, execution tracking, and data-driven decision making. Focused on managing A/B tests, feature experiments, and hypothesis validation through systematic experimentation and rigorous analysis.",
+      "color": "purple",
+      "division": "project-management",
+      "path": "project-management/project-management-experiment-tracker.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\project-management\\project-management-experiment-tracker.md"
+    },
+    {
+      "name": "Project Shepherd",
+      "description": "Expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder alignment. Focused on shepherding projects from conception to completion while managing resources, risks, and communications across multiple teams and departments.",
+      "color": "blue",
+      "division": "project-management",
+      "path": "project-management/project-management-project-shepherd.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\project-management\\project-management-project-shepherd.md"
+    },
+    {
+      "name": "Senior Project Manager",
+      "description": "Converts specs to tasks, remembers previous projects\\n - Focused on realistic scope, no background processes, exact spec requirements",
+      "color": "blue",
+      "division": "project-management",
+      "path": "project-management/project-manager-senior.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\project-management\\project-manager-senior.md"
+    },
+    {
+      "name": "Studio Operations",
+      "description": "Expert operations manager specializing in day-to-day studio efficiency, process optimization, and resource coordination. Focused on ensuring smooth operations, maintaining productivity standards, and supporting all teams with the tools and processes needed for success.",
+      "color": "green",
+      "division": "project-management",
+      "path": "project-management/project-management-studio-operations.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\project-management\\project-management-studio-operations.md"
+    },
+    {
+      "name": "Studio Producer",
+      "description": "Senior strategic leader specializing in high-level creative and technical project orchestration, resource allocation, and multi-project portfolio management. Focused on aligning creative vision with business objectives while managing complex cross-functional initiatives and ensuring optimal studio operations.",
+      "color": "gold",
+      "division": "project-management",
+      "path": "project-management/project-management-studio-producer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\project-management\\project-management-studio-producer.md"
+    },
+    {
+      "name": "macOS Spatial/Metal Engineer",
+      "description": "Native Swift and Metal specialist building high-performance 3D rendering systems and spatial computing experiences for macOS and Vision Pro",
+      "color": "metallic-blue",
+      "division": "spatial-computing",
+      "path": "spatial-computing/macos-spatial-metal-engineer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\spatial-computing\\macos-spatial-metal-engineer.md"
+    },
+    {
+      "name": "Terminal Integration Specialist",
+      "description": "Terminal emulation, text rendering optimization, and SwiftTerm integration for modern Swift applications",
+      "color": "green",
+      "division": "spatial-computing",
+      "path": "spatial-computing/terminal-integration-specialist.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\spatial-computing\\terminal-integration-specialist.md"
+    },
+    {
+      "name": "visionOS Spatial Engineer",
+      "description": "Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Glass design implementation",
+      "color": "indigo",
+      "division": "spatial-computing",
+      "path": "spatial-computing/visionos-spatial-engineer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\spatial-computing\\visionos-spatial-engineer.md"
+    },
+    {
+      "name": "XR Cockpit Interaction Specialist",
+      "description": "Specialist in designing and developing immersive cockpit-based control systems for XR environments",
+      "color": "orange",
+      "division": "spatial-computing",
+      "path": "spatial-computing/xr-cockpit-interaction-specialist.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\spatial-computing\\xr-cockpit-interaction-specialist.md"
+    },
+    {
+      "name": "XR Immersive Developer",
+      "description": "Expert WebXR and immersive technology developer with specialization in browser-based AR/VR/XR applications",
+      "color": "neon-cyan",
+      "division": "spatial-computing",
+      "path": "spatial-computing/xr-immersive-developer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\spatial-computing\\xr-immersive-developer.md"
+    },
+    {
+      "name": "XR Interface Architect",
+      "description": "Spatial interaction designer and interface strategist for immersive AR/VR/XR environments",
+      "color": "neon-green",
+      "division": "spatial-computing",
+      "path": "spatial-computing/xr-interface-architect.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\spatial-computing\\xr-interface-architect.md"
+    },
+    {
+      "name": "Agentic Identity & Trust Architect",
+      "description": "Designs identity, authentication, and trust verification systems for autonomous AI agents operating in multi-agent environments. Ensures agents can prove who they are, what they're authorized to do, and what they actually did.",
+      "color": "#2d5a27",
+      "division": "specialized",
+      "path": "specialized/agentic-identity-trust.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\specialized\\agentic-identity-trust.md"
+    },
+    {
+      "name": "Agents Orchestrator",
+      "description": "Autonomous pipeline manager that orchestrates the entire development workflow. You are the leader of this process.",
+      "color": "cyan",
+      "division": "specialized",
+      "path": "specialized/agents-orchestrator.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\specialized\\agents-orchestrator.md"
+    },
+    {
+      "name": "Data Analytics Reporter",
+      "description": "Expert data analyst transforming raw data into actionable business insights. Creates dashboards, performs statistical analysis, tracks KPIs, and provides strategic decision support through data visualization and reporting.",
+      "color": "",
+      "division": "specialized",
+      "path": "specialized/data-analytics-reporter.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\specialized\\data-analytics-reporter.md"
+    },
+    {
+      "name": "Data Consolidation Agent",
+      "description": "AI agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries",
+      "color": "#38a169",
+      "division": "specialized",
+      "path": "specialized/data-consolidation-agent.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\specialized\\data-consolidation-agent.md"
+    },
+    {
+      "name": "LSP/Index Engineer",
+      "description": "Language Server Protocol specialist building unified code intelligence systems through LSP client orchestration and semantic indexing",
+      "color": "orange",
+      "division": "specialized",
+      "path": "specialized/lsp-index-engineer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\specialized\\lsp-index-engineer.md"
+    },
+    {
+      "name": "Report Distribution Agent",
+      "description": "AI agent that automates distribution of consolidated sales reports to representatives based on territorial parameters",
+      "color": "#d69e2e",
+      "division": "specialized",
+      "path": "specialized/report-distribution-agent.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\specialized\\report-distribution-agent.md"
+    },
+    {
+      "name": "Sales Data Extraction Agent",
+      "description": "AI agent specialized in monitoring Excel files and extracting key sales metrics (MTD, YTD, Year End) for internal live reporting",
+      "color": "#2b6cb0",
+      "division": "specialized",
+      "path": "specialized/sales-data-extraction-agent.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\specialized\\sales-data-extraction-agent.md"
+    },
+    {
+      "name": "Analytics Reporter",
+      "description": "Expert data analyst transforming raw data into actionable business insights. Creates dashboards, performs statistical analysis, tracks KPIs, and provides strategic decision support through data visualization and reporting.",
+      "color": "teal",
+      "division": "support",
+      "path": "support/support-analytics-reporter.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\support\\support-analytics-reporter.md"
+    },
+    {
+      "name": "Executive Summary Generator",
+      "description": "Consultant-grade AI specialist trained to think and communicate like a senior strategy consultant. Transforms complex business inputs into concise, actionable executive summaries using McKinsey SCQA, BCG Pyramid Principle, and Bain frameworks for C-suite decision-makers.",
+      "color": "purple",
+      "division": "support",
+      "path": "support/support-executive-summary-generator.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\support\\support-executive-summary-generator.md"
+    },
+    {
+      "name": "Finance Tracker",
+      "description": "Expert financial analyst and controller specializing in financial planning, budget management, and business performance analysis. Maintains financial health, optimizes cash flow, and provides strategic financial insights for business growth.",
+      "color": "green",
+      "division": "support",
+      "path": "support/support-finance-tracker.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\support\\support-finance-tracker.md"
+    },
+    {
+      "name": "Infrastructure Maintainer",
+      "description": "Expert infrastructure specialist focused on system reliability, performance optimization, and technical operations management. Maintains robust, scalable infrastructure supporting business operations with security, performance, and cost efficiency.",
+      "color": "orange",
+      "division": "support",
+      "path": "support/support-infrastructure-maintainer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\support\\support-infrastructure-maintainer.md"
+    },
+    {
+      "name": "Legal Compliance Checker",
+      "description": "Expert legal and compliance specialist ensuring business operations, data handling, and content creation comply with relevant laws, regulations, and industry standards across multiple jurisdictions.",
+      "color": "red",
+      "division": "support",
+      "path": "support/support-legal-compliance-checker.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\support\\support-legal-compliance-checker.md"
+    },
+    {
+      "name": "Support Responder",
+      "description": "Expert customer support specialist delivering exceptional customer service, issue resolution, and user experience optimization. Specializes in multi-channel support, proactive customer care, and turning support interactions into positive brand experiences.",
+      "color": "blue",
+      "division": "support",
+      "path": "support/support-support-responder.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\support\\support-support-responder.md"
+    },
+    {
+      "name": "API Tester",
+      "description": "Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations",
+      "color": "purple",
+      "division": "testing",
+      "path": "testing/testing-api-tester.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\testing\\testing-api-tester.md"
+    },
+    {
+      "name": "Evidence Collector",
+      "description": "Screenshot-obsessed, fantasy-allergic QA specialist - Default to finding 3-5 issues, requires visual proof for everything",
+      "color": "orange",
+      "division": "testing",
+      "path": "testing/testing-evidence-collector.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\testing\\testing-evidence-collector.md"
+    },
+    {
+      "name": "Performance Benchmarker",
+      "description": "Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure",
+      "color": "orange",
+      "division": "testing",
+      "path": "testing/testing-performance-benchmarker.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\testing\\testing-performance-benchmarker.md"
+    },
+    {
+      "name": "Reality Checker",
+      "description": "Stops fantasy approvals, evidence-based certification - Default to \"NEEDS WORK\", requires overwhelming proof for production readiness",
+      "color": "red",
+      "division": "testing",
+      "path": "testing/testing-reality-checker.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\testing\\testing-reality-checker.md"
+    },
+    {
+      "name": "Test Results Analyzer",
+      "description": "Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis, and actionable insight generation from testing activities",
+      "color": "indigo",
+      "division": "testing",
+      "path": "testing/testing-test-results-analyzer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\testing\\testing-test-results-analyzer.md"
+    },
+    {
+      "name": "Tool Evaluator",
+      "description": "Expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms for business use and productivity optimization",
+      "color": "teal",
+      "division": "testing",
+      "path": "testing/testing-tool-evaluator.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\testing\\testing-tool-evaluator.md"
+    },
+    {
+      "name": "Workflow Optimizer",
+      "description": "Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business functions for maximum productivity and efficiency",
+      "color": "green",
+      "division": "testing",
+      "path": "testing/testing-workflow-optimizer.md",
+      "abs_path": "C:\\Users\\User\\vendor\\agency-agents\\testing\\testing-workflow-optimizer.md"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Style Vault"
+  short_description: "Offline archive of designprompts.dev styles for browsing and prompt retrieval"
+  default_prompt: "Browse the archived styles and use one as the design direction for this task."
